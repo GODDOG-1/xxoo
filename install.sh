@@ -407,7 +407,7 @@ install_dependencies(){
 
 }
 #update_image
-update_image_v2ray(){
+update_image-更新镜像_v2ray(){
     echo "关闭当前服务"
     docker-compose down
     echo "加载docker镜像"
@@ -418,13 +418,13 @@ update_image_v2ray(){
 
 #show last 100 line log
 
-logs_v2ray(){
+logs-查看日志_v2ray(){
     echo "显示最新100行的运行日志"
     docker-compose logs --tail 100
 }
 
 # Update config
-update_config_v2ray(){
+update_config-更新日志_v2ray(){
     cd ${cur_dir}
     echo "关闭当前服务"
     docker-compose down
@@ -455,7 +455,7 @@ update_config_v2ray(){
 }
 # remove config
 # Install v2ray
-install_v2ray(){
+install-全新安装_v2ray(){
     install_select
     case "${selected}" in
         1)
