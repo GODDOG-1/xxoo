@@ -488,7 +488,7 @@ for ((i=1;i<=${#operation[@]};i++ )); do
     hint="${operation[$i-1]}"
     echo -e "${green}${i}${plain}) ${hint}"
 done
-read -p "请选择数字后按回车 (默认 ${operation[0]}):" selected
+read -p "请选择数字后按回车 (回车默认 ${operation[0]}):" selected
 [ -z "${selected}" ] && selected="1"
 case "${selected}" in
     1|2|3|4)
