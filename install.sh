@@ -139,7 +139,7 @@ pre_install_docker_compose(){
 
     # Set ssrpanel node_id
     echo "你前端节点信息里面的节点ID"
-    read -p "(就你他妈前端添加节点后生成的ID 比如说是3这样子 ):" ssrpanel_node_id
+    read -p "(前端添加节点后生成的ID 比如说是3 ):" ssrpanel_node_id
     [ -z "${ssrpanel_node_id}" ] && ssrpanel_node_id=0
     echo
     echo "---------------------------"
@@ -148,7 +148,7 @@ pre_install_docker_compose(){
     echo
 
     # Set V2ray backend API Listen port
-    echo "设置V2RAY的出口监听端口"
+    echo "设置V2ray的出口监听端口"
     read -p "(回车默认2333端口即可 如有多开合租请不要重复):" v2ray_api_port
     [ -z "${v2ray_api_port}" ] && v2ray_api_port=2333
     echo
