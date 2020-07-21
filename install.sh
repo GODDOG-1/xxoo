@@ -424,7 +424,7 @@ logs-查看日志_v2ray(){
 }
 
 # Update config
-update_config-更新日志_v2ray(){
+update_config-更新配置_v2ray(){
     cd ${cur_dir}
     echo "关闭当前服务"
     docker-compose down
